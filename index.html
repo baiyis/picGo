@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
   <title>计时提示音</title>
   <!-- <link rel="shortcut icon"
     href="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1087635304,1586765238&fm=26&gp=0.jpg" /> -->
@@ -55,6 +55,7 @@
 
     .tips-button {
       margin-top: 10px;
+      margin-bottom: 50px;
     }
 
     .tips-button button {
@@ -73,9 +74,10 @@
           <button @click="timeNumberReduce">开始</button>
           <button @click="pauseNumber">暂停</button>
         </div>
+        <audio autoplay controls loop="true" id="playMp3"
+          src="https://img-qn.51miz.com/preview/sound/00/27/05/51miz-S270551-81E6CDBF.mp3"></audio>
       </div>
     </div>
-    <audio autoplay controls loop="true" id="playMp3" src="https://img-qn.51miz.com/preview/sound/00/27/05/51miz-S270551-81E6CDBF.mp3" ></audio>
   </div>
   <script>
     var vm = new Vue({
