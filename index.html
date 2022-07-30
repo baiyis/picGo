@@ -71,11 +71,11 @@
         <div>提示间隔时间：<input type="number" min="3" v-model="timeCount">秒</div>
         <div class="l-b-c tips-button">
           <button @click="timeNumberReduce">开始</button>
-          <button>暂停</button>
+          <button @click="pauseNumber">暂停</button>
         </div>
       </div>
     </div>
-    <audio autoplay controls loop="true" id="playMp3" src="https://img-qn.51miz.com/preview/sound/00/27/05/51miz-S270551-81E6CDBF.mp3" v-show="false"></audio>
+    <audio autoplay controls loop="true" id="playMp3" src="./ts.mp3" v-show="false"></audio>
   </div>
   <script>
     var vm = new Vue({
